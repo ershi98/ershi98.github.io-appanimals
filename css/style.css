@@ -1,7 +1,7 @@
 
 /********** Template CSS **********/
 :root {
-    --primary: #6f42c1;
+    --primary: #C29AFF;
     --light: #F5F5F5;
     --dark: #353535;
 }
@@ -91,7 +91,7 @@
 .navbar-light .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color: #6f42c1;
+    color: #C29AFF;
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
@@ -439,17 +439,17 @@
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    background: #6f42c1;
+    background: #C29AFF;
     transition: .5s;
 }
 
 .team-item .team-social .btn {
     color: var(--primary);
-    background: #6f42c1;
+    background: #C29AFF;
 }
 
 .team-item .team-social .btn:hover {
-    color: #6f42c1;
+    color: #C29AFF;
     background: var(--primary);
 }
 
@@ -575,7 +575,7 @@
     align-items: center;
     justify-content: center;
     color: var(--light);
-    border: 1px solid #6f42c1;
+    border: 1px solid #C29AFF;
     transition: .3s;
 }
 
@@ -588,7 +588,7 @@
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: #6f42c1;
+    color: #C29AFF;
     font-size: 15px;
     font-weight: normal;
     text-transform: capitalize;
