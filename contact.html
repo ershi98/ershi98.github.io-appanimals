@@ -89,35 +89,35 @@
 
                         <h1 class="display-5 mb-4">Contáctanos</h1>
 
-                        <form>
+                        <form method="post" action="enviar.php">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Your Name">
+                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Your Name" required>
                                         <label for="name">Nombre Completo</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
                                         <label for="email">Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="asunt" placeholder="Subject">
+                                        <input type="text" class="form-control" id="asunto" name="asunto"  placeholder="Subject" required>
                                         <label for="subject">Asunto</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                        <textarea class="form-control" placeholder="Leave a message here" id="mensaje" name="mensaje" required
                                             style="height: 100px"></textarea>
                                         <label for="message">Mensaje</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Enviar Mensaje</button>
+                                    <button class="btn btn-primary w-100 py-3" type="submit" value="Enviar Mensaje">Enviar Mensaje</button>
                                 </div>
                             </div>
                         </form>
