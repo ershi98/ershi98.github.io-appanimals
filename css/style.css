@@ -245,8 +245,13 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(84, 82, 82, 0.51), rgba(84, 82, 82, 0.51)), url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
+}
+
+.conto {
+    height: 850px;
+    text-align: left;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -563,7 +568,7 @@
 
 /*** Footer ***/
 .footer {
-    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/footer.jpg) center center no-repeat;
+    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/footer1.jpeg) center center no-repeat;
     background-size: cover;
 }
 

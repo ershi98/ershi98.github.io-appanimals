@@ -129,7 +129,8 @@ h4,
 }
 h5,
 .h5 {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
+  text-align: center;
 }
 h6,
 .h6 {
@@ -6194,7 +6195,7 @@ fieldset:disabled .btn {
   justify-content: center !important;
 }
 .justify-content-between {
-  justify-content: space-between !important;
+  justify-content: space-evenly !important;
 }
 .justify-content-around {
   justify-content: space-around !important;
