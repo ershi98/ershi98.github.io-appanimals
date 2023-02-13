@@ -6,7 +6,14 @@
     
     //datos para correo
     $correo_destino = "sebasssanchez99527@gmail.com";
-    $asunto = "Contacto desde web AdopPet";
+    $asunto2 = "Contacto desde web AdopPet";
 
-    
+    $correo_red = "De: $nombre \n";
+    $correo_red .= "Correo: $email \n";
+    $correo_red .= "Asunto: $asunto \n";
+    $correo_red .= "Mensaje: $mensaje";
+
+    //enviar mensaje
+    mail($correo_destino,$asunto2, $correo_red);
+
 ?>
