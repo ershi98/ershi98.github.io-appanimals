@@ -563,9 +563,10 @@
 
 /*** Footer ***/
 .footer {
-    background: url(/img/footer.png) center center no-repeat;
+    background: url(../img/footer.png) center center no-repeat;
     background-size: cover;
 }
+
 
 .footer .btn.btn-social {
     margin-right: 5px;
