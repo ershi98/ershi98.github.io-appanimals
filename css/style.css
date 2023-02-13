@@ -563,7 +563,7 @@
 
 /*** Footer ***/
 .footer {
-    background: url(img/footer.jpg) center center no-repeat;
+    background: url(/img/footer.jpg) center center no-repeat;
     background-size: cover;
 }
 
