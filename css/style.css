@@ -538,6 +538,11 @@
 
 
 /*** Contact ***/
+
+.alert{
+    display: none;
+}
+
 @media (min-width: 992px) {
     .container.contact {
         max-width: 100% !important;
