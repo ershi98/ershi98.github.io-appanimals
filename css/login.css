@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #632959;
+    background: #C29AFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,7 +88,7 @@ a {
 button {
     border-radius: 20px;
     border: 1px solid carr;
-    background: #AC649F;
+    background: #C29AFF;
     color: #fff;
     font-size: 12px;
     font-weight: bold;
@@ -116,6 +116,7 @@ button.ghost {
     top: 0;
     height: 100%;
     transition: all .6s ease-in-out;
+    
 }
 
 .sign-in-container {
@@ -144,7 +145,7 @@ button.ghost {
 
 .overlay {
     background: #ff416c;
-    background: linear-gradient(to right, #AC649F, #AC649F) no-repeat 0 0 / cover;
+    background: linear-gradient(to right, #A6E5FF, #C29AFF) no-repeat 0 0 / cover;
     color: #fff;
     position: relative;
     left: -100%;
