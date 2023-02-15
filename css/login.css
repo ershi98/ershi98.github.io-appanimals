@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #C29AFF;
+    background: url(img/back-login.gif) center center no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
