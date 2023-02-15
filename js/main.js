@@ -99,3 +99,47 @@
     
 })(jQuery);
 
+//Validacion mensaje contacto
+function enviarCorreo(){
+    $(".alerta_correo").css('display', 'none');
+    $(".alerta_mensaje").css('display','none');
+    $(".alerta_correcto").css('display','none');
+    $(".alerta_incorrecto").css('display','none');
+
+    var nombre = $("#nombre").val();
+    var correo = $("#email").val();
+    var asunto = $("#asunto").val();
+    var mensaje = $("#mensaje").val();
+    var valido = 1;
+    var validacion_correo = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
+
+    if(!validacion_correo.test(correo)){
+        $(".alerta_correo").css('display', 'block');
+        valido = 0;
+    }
+
+    if(mensaje.length <= 10 ){
+        $(".alerta_mensaje").css('display','block')
+        valido = 0;
+    }
+    
+    if(valido==1){
+        var datos = 'nombre =' + nombre + '&email =' + correo + '&asunto ='+ asunto + '&mensaje =' + mensaje ;
+        $.ajax({
+			type: "POST",
+			url: "enviar.php",
+			data: datos,
+			success: function(res) {
+                if(parseInt(res) == 1){
+                    $('.alerta_correcto').css('display','block');
+                }else{
+                    $('.alerta_incorrecto').css('display','block');
+                }
+			},
+			error: function(res) {
+                $('.alerta_incorrecto').css('display','block');
+			}
+		});
+    }
+}
+
