@@ -129,7 +129,7 @@ h4,
 }
 h5,
 .h5 {
-  font-size: 1.75rem;
+  font-size: 1.55rem;
   text-align: center;
 }
 h6,
@@ -419,7 +419,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .display-1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 .display-2 {

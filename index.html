@@ -1,556 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>adoppet</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+<head>
+  <meta charset="utf-8" />
+  <title>AdopPet</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+    rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-  <body>
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="spinner-grow text-primary"
-        style="width: 3rem; height: 3rem"
-        role="status"
-      >
-        <span class="sr-only">Loading...</span>
-      </div>
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem" role="status">
+      <span class="sr-only">Loading...</span>
     </div>
-    <!-- Spinner End -->
+  </div>
+  <!-- Spinner End -->
 
-    <!-- Topbar End -->
+  <!-- Topbar End -->
 
-    <!-- start Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-      <a
-        href="index.html"
-        class="navbar-brand d-flex align-items-center px-4 px-lg-5"
-      >
-        <img src="img/logo-nav.ico" style="width: 60%" alt="" />
+  <!-- Inicio Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+      <img src="img/logo-nav.ico" style="width: 60%" alt="" />
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto p-4 p-lg-0">
+        <a href="#" class="nav-item nav-link">Inicio</a>
+        <a href="nosotros.html" class="nav-item nav-link active">Nosotros</a>
+        <a href="adoption.html" class="nav-item nav-link">Adopción</a>
+        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+      </div>
+      <a href="login.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Ingresar<i
+          class="fa fa-arrow-right ms-3"></i>
       </a>
-      <button
-        type="button"
-        class="navbar-toggler me-4"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="index.html" class="nav-item nav-link">Inicio</a>
-          <a href="about.html" class="nav-item nav-link active"
-            >Nosotros</a
-          >
-          <a href="adoption.html" class="nav-item nav-link">Adopción</a>
-          <a href="contact.html" class="nav-item nav-link">Contacto</a>
-        </div>
-        <a
-          href="login.html"
-          class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"
-          >Ingresar<i class="fa fa-arrow-right ms-3"></i
-        ></a>
-      </div>
-    </nav>
-    <!-- end Navbar -->
+    </div>
+  </nav>
+  <!-- Fin Navbar -->
 
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5">
-      <div class="owl-carousel header-carousel position-relative">
-        <div class="owl-carousel-item position-relative">
-          <img
-            class="img-fluid"
-            src="img/carousel-1.jpg"
-            style="height: 910px"
-            alt=""
-          />
-          <div
-            class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-            style="background: rgba(53, 53, 53, 0.7)"
-          >
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-12 col-lg-8 text-center">
-                  <h5
-                    class="text-white  mb-3 animated slideInDown"
-                  >
-                    Bienvenidos a AdopPet
-                  </h5>
-                  <h1 class="display-3 text-white animated slideInDown mb-4">
-                    No puedes comprar amor, pero puedes adoptarlo
-                  </h1>
-                  <p class="fs-5 fw-medium text-white mb-4 pb-2">
-                    Adopta una mascota
-                  </p>
-                  <a
-                    href=""
-                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
-                    >Apoyanos</a
-                  >
-                  <a
-                    href=""
-                    class="btn btn-light py-md-3 px-md-5 animated slideInRight"
-                    >Contactanos</a
-                  >
-                </div>
+  <!-- Inicio Carrusel -->
+  <div class="container-fluid p-0 pb-5">
+    <div class="owl-carousel header-carousel position-relative">
+      <div class="owl-carousel-item position-relative">
+        <img class="img-fluid" src="img/carousel-1.jpg" style="height: 910px" alt="" />
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+          style="background: rgba(53, 53, 53, 0.7)">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-8 text-center">
+                <h5 class="text-white  mb-3 animated slideInDown">
+                  Bienvenidos a AdopPet
+                </h5>
+                <h1 class="display-3 text-white animated slideInDown mb-4">
+                  No puedes comprar amor, pero puedes adoptarlo
+                </h1>
+                <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                  Adopta una mascota
+                </p>
+                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Apoyanos</a>
+                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Contactanos</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="owl-carousel-item position-relative">
-          <img
-            class="img-fluid"
-            src="img/carousel-2.jpg"
-            style="height: 910px"
-            alt=""
-          />
-          <div
-            class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-            style="background: rgba(53, 53, 53, 0.7)"
-          >
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-12 col-lg-8 text-center">
-                  <h5
-                    class="text-white mb-3 animated slideInDown"
-                  >
-                    Bienvenidos a AdopPet
-                  </h5>
-                  <h1 class="display-3 text-white animated slideInDown mb-4">
-                    Adoptar salva vidas, <br> Haz la elección correcta
-                  </h1>
-                  <p class="fs-5 fw-medium text-white mb-4 pb-2">
-                    Adopta una mascota
-                  </p>
-                  <a
-                    href=""
-                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
-                    >Apoyanos</a
-                  >
-                  <a
-                    href=""
-                    class="btn btn-light py-md-3 px-md-5 animated slideInRight"
-                    >Contactanos</a
-                  >
-                </div>
+      </div>
+      <div class="owl-carousel-item position-relative">
+        <img class="img-fluid" src="img/carousel-2.jpg" style="height: 910px" alt="" />
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+          style="background: rgba(53, 53, 53, 0.7)">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-8 text-center">
+                <h5 class="text-white mb-3 animated slideInDown">
+                  Bienvenidos a AdopPet
+                </h5>
+                <h1 class="display-3 text-white animated slideInDown mb-4">
+                  Adoptar salva vidas, <br> Haz la elección correcta
+                </h1>
+                <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                  Adopta una mascota
+                </p>
+                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Apoyanos</a>
+                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Contactanos</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="owl-carousel-item position-relative">
-          <img
-            class="img-fluid"
-            src="img/carousel-3.jpg"
-            style="height: 910px"
-            alt=""
-          />
-          <div
-            class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-            style="background: rgba(53, 53, 53, 0.7)"
-          >
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-12 col-lg-8 text-center">
-                  <h5
-                    class="text-white mb-3 animated slideInDown"
-                  >
-                    Bienvenidos a AdopPet
-                  </h5>
-                  <h1 class="display-3 text-white animated slideInDown mb-4">
-                    Haz la diferencia <br> en la vida de un animal
-                  </h1>
-                  <p class="fs-5 fw-medium text-white mb-4 pb-2">
-                    Adopta una mascota
-                  </p>
-                  <a
-                    href=""
-                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
-                    >Apoyanos</a
-                  >
-                  <a
-                    href=""
-                    class="btn btn-light py-md-3 px-md-5 animated slideInRight"
-                    >Contactanos</a
-                  >
-                </div>
+      </div>
+      <div class="owl-carousel-item position-relative">
+        <img class="img-fluid" src="img/carousel-3.jpg" style="height: 910px" alt="" />
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+          style="background: rgba(53, 53, 53, 0.7)">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-8 text-center">
+                <h5 class="text-white mb-3 animated slideInDown">
+                  Bienvenidos a AdopPet
+                </h5>
+                <h1 class="display-3 text-white animated slideInDown mb-4">
+                  Haz la diferencia <br> en la vida de un animal
+                </h1>
+                <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                  Adopta una mascota
+                </p>
+                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Apoyanos</a>
+                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Contactanos</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Carousel End -->
+  </div>
+  <!-- Fin Carrusel -->
 
-    <div class="container">
-      <!-- Feature Start -->
-      <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col" data-wow-delay="0.1s">
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center justify-content-center bg-light"
-                            style="width: 60px; height: 60px; font-size: 1.7em;">
-                            <i class="fas fa-home fa-2x text-primary"></i>
-                        </div>
-                        <h1 class="display-1 text-black mb-0" data-toggle="counter-up"> 100</h1>
-                    </div>
-                    <h5>Adoptados</h5>
-                </div>
-                <div class="col" data-wow-delay="0.3s">
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center justify-content-center bg-light"
-                            style="width: 60px; height: 60px; font-size: 1.7em">
-                            <i class="fas fa-dog fa-2x text-primary"></i>
-                        </div>
-                        <h1 class="display-1 text-black mb-0" data-toggle="counter-up">500</h1>
-                    </div>
-                    <h5>Rescatados</h5>
-                </div>
-                <div class="col" data-wow-delay="0.5s">
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center justify-content-center bg-light"
-                            style="width: 60px; height: 60px; font-size: 1.7em">
-                            <i class="fas fa-search-location fa-2x text-primary"></i>
-                        </div>
-                        <h1 class="display-1 text-black mb-0" data-toggle="counter-up" >300</h1>
-                    </div>
-                    <h5>Buscan Hogar</h5>
-                </div>
+  <div class="container">
+    <!-- Feature Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col" data-wow-delay="0.1s">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="d-flex align-items-center justify-content-center bg-light"
+                style="width: 60px; height: 60px; font-size: 1.7em;">
+                <i class="fas fa-home fa-2x text-primary"></i>
+              </div>
+              <h1 class="display-1 text-black mb-0" data-toggle="counter-up"> 100</h1>
             </div>
+            <h5>Adoptados</h5>
+          </div>
+          <div class="col" data-wow-delay="0.3s">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="d-flex align-items-center justify-content-center bg-light"
+                style="width: 60px; height: 60px; font-size: 1.7em">
+                <i class="fas fa-dog fa-2x text-primary"></i>
+              </div>
+              <h1 class="display-1 text-black mb-0" data-toggle="counter-up">500</h1>
+            </div>
+            <h5>Rescatados</h5>
+          </div>
+          <div class="col" data-wow-delay="0.5s">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="d-flex align-items-center justify-content-center bg-light"
+                style="width: 60px; height: 60px; font-size: 1.7em">
+                <i class="fas fa-search-location fa-2x text-primary"></i>
+              </div>
+              <h1 class="display-1 text-black mb-0" data-toggle="counter-up">300</h1>
+            </div>
+            <h5>Buscan Hogar</h5>
+          </div>
         </div>
+      </div>
     </div>
-      <!-- Feature Start -->
+    <!-- Feature Start -->
 
-      <!-- About Start -->
-      <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container about px-lg-0">
-          <div class="row g-0 mx-lg-0">
-            <div class="col-lg-6 ps-lg-0 jover" style="min-height: 400px">
-              <div class="position-relative h-100">
-                <img
-                  class="position-absolute img-fluid w-100 h-100"
-                  src="img/about.jpg"
-                  style="object-fit: cover"
-                  alt=""
-                />
-              </div>
+    <!-- Inicio Nosotros -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+      <div class="container about px-lg-0">
+        <div class="row g-0 mx-lg-0">
+          <div class="col-lg-6 ps-lg-0 jover" style="min-height: 400px">
+            <div class="position-relative h-100">
+              <img class="position-absolute img-fluid w-100 h-100" src="img/catdog.jpg" style="object-fit: cover"
+                alt="" />
             </div>
-            <div
-              class="col-lg-6 about-text py-5 wow fadeIn"
-              data-wow-delay="0.5s"
-            >
-              <div class="p-lg-5 pe-lg-0">
-                <div class="section-title text-start">
-                  <h1 class="display-5 mb-4">Nosotros</h1>
+          </div>
+          <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+            <div class="p-lg-5 pe-lg-0">
+              <div class="section-title text-start">
+                <h1 class="display-5 mb-4">Nosotros</h1>
+              </div>
+              <p class="mb-4 pb-2">
+                Buscamos hogares amorosos para animales necesitados. Promovemos la adopción y la tenencia responsable.
+                Juntos, mejoramos el bienestar animal y el mundo.
+              </p>
+              <div class="row g-4 mb-4 pb-2">
+                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                  <div class="d-flex align-items-center">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                      style="width: 60px; height: 60px">
+                      <i class="fa fa-users fa-2x text-primary"></i>
+                    </div>
+                    <div class="ms-3">
+                      <h2 class="text-primary mb-1" data-toggle="counter-up">
+                        100
+                      </h2>
+                      <p class="fw-medium mb-0">Familias Felices</p>
+                    </div>
+                  </div>
                 </div>
-                <p class="mb-4 pb-2">
-                  Buscamos hogares amorosos para animales necesitados. Promovemos la adopción y la tenencia responsable. Juntos, mejoramos el bienestar animal y el mundo.
+                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                  <div class="d-flex align-items-center">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                      style="width: 60px; height: 60px">
+                      <i class="fa fa-check fa-2x text-primary"></i>
+                    </div>
+                    <div class="ms-3">
+                      <h2 class="text-primary mb-1" data-toggle="counter-up">
+                        800
+                      </h2>
+                      <p class="fw-medium mb-0">Proyectos Terminados</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="nosotros.html" class="btn btn-primary py-3 px-5"> Explorar Mas </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="section-title text-center">
+          <h1 class="display-5 mb-5">Our familys</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/service-1.jpg" alt="" />
+              </div>
+              <div class="p-4 text-center border border-5 border-light border-top-0">
+                <h4 class="mb-3">General Carpentry</h4>
+                <p>
+                  Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
+                  lorem diam.
                 </p>
-                <div class="row g-4 mb-4 pb-2">
-                  <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
-                        style="width: 60px; height: 60px"
-                      >
-                        <i class="fa fa-users fa-2x text-primary"></i>
-                      </div>
-                      <div class="ms-3">
-                        <h2 class="text-primary mb-1" data-toggle="counter-up">
-                          100
-                        </h2>
-                        <p class="fw-medium mb-0">Familias Felices</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
-                        style="width: 60px; height: 60px"
-                      >
-                        <i class="fa fa-check fa-2x text-primary"></i>
-                      </div>
-                      <div class="ms-3">
-                        <h2 class="text-primary mb-1" data-toggle="counter-up">
-                          800
-                        </h2>
-                        <p class="fw-medium mb-0">Proyectos Terminados</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <a href="about.html" class="btn btn-primary py-3 px-5"> Explorar Mas </a>
+                <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- About End -->
-
-      
-      <!-- Service Start -->
-      <div class="container-xxl py-5">
-        <div class="container">
-          <div class="section-title text-center">
-            <h1 class="display-5 mb-5">Our familys</h1>
-          </div>
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="service-item">
-                <div class="overflow-hidden">
-                  <img class="img-fluid" src="img/service-1.jpg" alt="" />
-                </div>
-                <div
-                  class="p-4 text-center border border-5 border-light border-top-0"
-                >
-                  <h4 class="mb-3">General Carpentry</h4>
-                  <p>
-                    Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
-                    lorem diam.
-                  </p>
-                  <a class="fw-medium" href=""
-                    >Read More<i class="fa fa-arrow-right ms-2"></i
-                  ></a>
-                </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/service-2.jpg" alt="" />
               </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="service-item">
-                <div class="overflow-hidden">
-                  <img class="img-fluid" src="img/service-2.jpg" alt="" />
-                </div>
-                <div
-                  class="p-4 text-center border border-5 border-light border-top-0"
-                >
-                  <h4 class="mb-3">Furniture Manufacturing</h4>
-                  <p>
-                    Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
-                    lorem diam.
-                  </p>
-                  <a class="fw-medium" href=""
-                    >Read More<i class="fa fa-arrow-right ms-2"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-              <div class="service-item">
-                <div class="overflow-hidden">
-                  <img class="img-fluid" src="img/service-3.jpg" alt="" />
-                </div>
-                <div
-                  class="p-4 text-center border border-5 border-light border-top-0"
-                >
-                  <h4 class="mb-3">Furniture Remodeling</h4>
-                  <p>
-                    Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
-                    lorem diam.
-                  </p>
-                  <a class="fw-medium" href=""
-                    >Read More<i class="fa fa-arrow-right ms-2"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="service-item">
-                <div class="overflow-hidden">
-                  <img class="img-fluid" src="img/service-4.jpg" alt="" />
-                </div>
-                <div
-                  class="p-4 text-center border border-5 border-light border-top-0"
-                >
-                  <h4 class="mb-3">Wooden Floor</h4>
-                  <p>
-                    Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
-                    lorem diam.
-                  </p>
-                  <a class="fw-medium" href=""
-                    >Read More<i class="fa fa-arrow-right ms-2"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="service-item">
-                <div class="overflow-hidden">
-                  <img class="img-fluid" src="img/service-5.jpg" alt="" />
-                </div>
-                <div
-                  class="p-4 text-center border border-5 border-light border-top-0"
-                >
-                  <h4 class="mb-3">Wooden Furniture</h4>
-                  <p>
-                    Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
-                    lorem diam.
-                  </p>
-                  <a class="fw-medium" href=""
-                    >Read More<i class="fa fa-arrow-right ms-2"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-              <div class="service-item">
-                <div class="overflow-hidden">
-                  <img class="img-fluid" src="img/service-6.jpg" alt="" />
-                </div>
-                <div
-                  class="p-4 text-center border border-5 border-light border-top-0"
-                >
-                  <h4 class="mb-3">Custom Work</h4>
-                  <p>
-                    Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
-                    lorem diam.
-                  </p>
-                  <a class="fw-medium" href=""
-                    >Read More<i class="fa fa-arrow-right ms-2"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Service End -->
-
-      <!-- Feature Start -->
-      <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container feature px-lg-0">
-          <div class="row g-0 mx-lg-0">
-            <div
-              class="col-lg-6 feature-text py-5 wow fadeIn"
-              data-wow-delay="0.5s"
-            >
-              <div class="p-lg-5 ps-lg-0">
-                <div class="section-title text-start">
-                  <h1 class="display-5 mb-4">Por qué escogernos</h1>
-                </div>
-                <p class="mb-4 pb-2">
-                    En nuestro corazón late un amor incondicional por los animales y es por eso que trabajamos día a día para brindarles el hogar y la familia que se merecen.
+              <div class="p-4 text-center border border-5 border-light border-top-0">
+                <h4 class="mb-3">Furniture Manufacturing</h4>
+                <p>
+                  Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
+                  lorem diam.
                 </p>
-                <div class="row g-4">
-                  <div class="col-6">
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
-                        style="width: 60px; height: 60px"
-                      >
-                        <i class="fas fa-hourglass-half fa-2x text-primary"></i>
-                        
-                      </div>
-                      <div class="ms-4">
-                        <p class="mb-2">Dedicación</p>
-                        <h5 class="mb-0">Rehabilitación</h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
-                        style="width: 60px; height: 60px"
-                      >
-                        <i class="fas fa-hands fa-2x text-primary"></i>
-                        
-                      </div>
-                      <div class="ms-4">
-                        <p class="mb-2">Empatía</p>
-                        <h5 class="mb-0">Adopción</h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
-                        style="width: 60px; height: 60px"
-                      >
-                        <i
-                          class="fas fa-hand-holding-heart fa-2x text-primary"
-                        ></i>
-                        
-                      </div>
-                      <div class="ms-4">
-                        <p class="mb-2">Responsabilidad</p>
-                        <h5 class="mb-0">Protección</h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
-                        style="width: 60px; height: 60px"
-                      >
-                        <i class="fas fa-heart fa-2x text-primary"></i>
-                        
-                      </div>
-                      <div class="ms-4">
-                        <p class="mb-2">Amor</p>
-                        <h5 class="mb-0">Sanación</h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
               </div>
             </div>
-            <div class="col-lg-6 pe-lg-0 jover" style="min-height: 400px">
-              <div class="position-relative h-100">
-                <img
-                  class="position-absolute img-fluid w-100 h-100"
-                  src="img/feature.jpg"
-                  style="object-fit: cover"
-                  alt=""
-                />
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/service-3.jpg" alt="" />
+              </div>
+              <div class="p-4 text-center border border-5 border-light border-top-0">
+                <h4 class="mb-3">Furniture Remodeling</h4>
+                <p>
+                  Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
+                  lorem diam.
+                </p>
+                <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/service-4.jpg" alt="" />
+              </div>
+              <div class="p-4 text-center border border-5 border-light border-top-0">
+                <h4 class="mb-3">Wooden Floor</h4>
+                <p>
+                  Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
+                  lorem diam.
+                </p>
+                <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/service-5.jpg" alt="" />
+              </div>
+              <div class="p-4 text-center border border-5 border-light border-top-0">
+                <h4 class="mb-3">Wooden Furniture</h4>
+                <p>
+                  Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
+                  lorem diam.
+                </p>
+                <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/service-6.jpg" alt="" />
+              </div>
+              <div class="p-4 text-center border border-5 border-light border-top-0">
+                <h4 class="mb-3">Custom Work</h4>
+                <p>
+                  Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
+                  lorem diam.
+                </p>
+                <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Feature End -->
+    </div>
+    <!-- Service End -->
 
-      <!-- Projects Start -->
-      <!-- 
+    <!-- Feature Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+      <div class="container feature px-lg-0">
+        <div class="row g-0 mx-lg-0">
+          <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
+            <div class="p-lg-5 ps-lg-0">
+              <div class="section-title text-start">
+                <h1 class="display-5 mb-4">Por qué escogernos</h1>
+              </div>
+              <p class="mb-4 pb-2">
+                En nuestro corazón late un amor incondicional por los animales y es por eso que trabajamos día a día
+                para brindarles el hogar y la familia que se merecen.
+              </p>
+              <div class="row g-4">
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                      style="width: 60px; height: 60px">
+                      <i class="fas fa-hourglass-half fa-2x text-primary"></i>
+
+                    </div>
+                    <div class="ms-4">
+                      <p class="mb-2">Dedicación</p>
+                      <h5 class="mb-0">Rehabilitación</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                      style="width: 60px; height: 60px">
+                      <i class="fas fa-hands fa-2x text-primary"></i>
+
+                    </div>
+                    <div class="ms-4">
+                      <p class="mb-2">Empatía</p>
+                      <h5 class="mb-0">Adopción</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                      style="width: 60px; height: 60px">
+                      <i class="fas fa-hand-holding-heart fa-2x text-primary"></i>
+
+                    </div>
+                    <div class="ms-4">
+                      <p class="mb-2">Responsabilidad</p>
+                      <h5 class="mb-0">Protección</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                      style="width: 60px; height: 60px">
+                      <i class="fas fa-heart fa-2x text-primary"></i>
+
+                    </div>
+                    <div class="ms-4">
+                      <p class="mb-2">Amor</p>
+                      <h5 class="mb-0">Sanación</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 pe-lg-0 jover" style="min-height: 400px">
+            <div class="position-relative h-100">
+              <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover"
+                alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Feature End -->
+
+    <!-- Projects Start -->
+    <!-- 
         <div class="container-xxl py-5">
         <div class="container">
             <div class="section-title text-center">
@@ -660,200 +535,143 @@
         </div>
     </div>
      -->
-      <!-- Projects End -->
+    <!-- Projects End -->
 
-      <!-- Quote Start -->
-      <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container quote px-lg-0">
-          <div class="row g-0 mx-lg-0">
-            <div class="col-lg-6 ps-lg-0" style="min-height: 400px">
-              <div class="position-relative h-100">
-                <img
-                  class="position-absolute img-fluid w-100 h-100"
-                  src="img/quote.jpg"
-                  style="object-fit: cover"
-                  alt=""
-                />
+    <!-- Quote Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+      <div class="container quote px-lg-0">
+        <div class="row g-0 mx-lg-0">
+          <div class="col-lg-6 ps-lg-0" style="min-height: 400px">
+            <div class="position-relative h-100">
+              <img class="position-absolute img-fluid w-100 h-100" src="img/quote.jpg" style="object-fit: cover"
+                alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+            <div class="p-lg-5 pe-lg-0">
+              <div class="section-title text-start">
+                <h1 class="display-5 mb-4">Free Quote</h1>
+              </div>
+              <p class="mb-4 pb-2">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+                sed stet lorem sit clita duo justo erat amet
+              </p>
+              <form>
+                <div class="row g-3">
+                  <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px" />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px" />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control border-0" placeholder="Your Mobile" style="height: 55px" />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <select class="form-select border-0" style="height: 55px">
+                      <option selected>Select A Service</option>
+                      <option value="1">Service 1</option>
+                      <option value="2">Service 2</option>
+                      <option value="3">Service 3</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <textarea class="form-control border-0" placeholder="Special Note"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary w-100 py-3" type="submit">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Quote End -->
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="section-title text-center">
+          <h1 class="display-5 mb-5">Miembros Del Grupo</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item">
+              <div class="overflow-hidden position-relative">
+                <img class="img-fluid" src="img/equipo-1.jpg" alt="" style="height: 50%;" />
+                <div class="team-social">
+                  <a class="btn btn-square" href=""><i class="fab fa-facebook-f" style="color: aliceblue"></i></a>
+                  <a class="btn btn-square" href=""><i class="bi bi-linkedin" style="color: aliceblue"></i></a>
+                  <a class="btn btn-square" href=""><i class="fab fa-instagram" style="color: aliceblue"></i></a>
+                </div>
+              </div>
+              <div class="text-center border border-5 border-light border-top-0 p-4">
+                <h5 class="mb-0">Brayan Caceres</h5>
+                <small> Desarrollador Full Stack </small>
               </div>
             </div>
-            <div
-              class="col-lg-6 quote-text py-5 wow fadeIn"
-              data-wow-delay="0.5s"
-            >
-              <div class="p-lg-5 pe-lg-0">
-                <div class="section-title text-start">
-                  <h1 class="display-5 mb-4">Free Quote</h1>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-item">
+              <div class="overflow-hidden position-relative">
+                <img class="img-fluid" src="img/equipo-2.jpg" alt="" />
+                <div class="team-social">
+                  <a class="btn btn-square" href=""><i class="fab fa-facebook-f" style="color: aliceblue"></i></a>
+                  <a class="btn btn-square" href=""><i class="bi bi-linkedin" style="color: aliceblue"></i></a>
+                  <a class="btn btn-square" href=""><i class="fab fa-instagram" style="color: aliceblue"></i></a>
                 </div>
-                <p class="mb-4 pb-2">
-                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                  Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                  sed stet lorem sit clita duo justo erat amet
-                </p>
-                <form>
-                  <div class="row g-3">
-                    <div class="col-12 col-sm-6">
-                      <input
-                        type="text"
-                        class="form-control border-0"
-                        placeholder="Your Name"
-                        style="height: 55px"
-                      />
-                    </div>
-                    <div class="col-12 col-sm-6">
-                      <input
-                        type="email"
-                        class="form-control border-0"
-                        placeholder="Your Email"
-                        style="height: 55px"
-                      />
-                    </div>
-                    <div class="col-12 col-sm-6">
-                      <input
-                        type="text"
-                        class="form-control border-0"
-                        placeholder="Your Mobile"
-                        style="height: 55px"
-                      />
-                    </div>
-                    <div class="col-12 col-sm-6">
-                      <select class="form-select border-0" style="height: 55px">
-                        <option selected>Select A Service</option>
-                        <option value="1">Service 1</option>
-                        <option value="2">Service 2</option>
-                        <option value="3">Service 3</option>
-                      </select>
-                    </div>
-                    <div class="col-12">
-                      <textarea
-                        class="form-control border-0"
-                        placeholder="Special Note"
-                      ></textarea>
-                    </div>
-                    <div class="col-12">
-                      <button class="btn btn-primary w-100 py-3" type="submit">
-                        Submit
-                      </button>
-                    </div>
-                  </div>
-                </form>
+              </div>
+              <div class="text-center border border-5 border-light border-top-0 p-4">
+                <h5 class="mb-0">Sebastian Sanchez</h5>
+                <small>Desarrollador Full Stack</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="team-item">
+              <div class="overflow-hidden position-relative">
+                <img class="img-fluid" src="img/equipo-3.jpg" alt="" />
+                <div class="team-social">
+                  <a class="btn btn-square" href=""><i class="fab fa-facebook-f" style="color: aliceblue"></i></a>
+                  <a class="btn btn-square" href=""><i class="bi bi-linkedin" style="color: aliceblue"></i></a>
+                  <a class="btn btn-square" href=""><i class="fab fa-instagram" style="color: aliceblue"></i></a>
+                </div>
+              </div>
+              <div class="text-center border border-5 border-light border-top-0 p-4">
+                <h5 class="mb-0">Aliz Zaray Mejía</h5>
+                <small>Desarrollador Full Stack</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="team-item">
+              <div class="overflow-hidden position-relative">
+                <img class="img-fluid" src="img/equipo-4.jpg" alt="" />
+                <div class="team-social">
+                  <a class="btn btn-square" href=""><i class="fab fa-facebook-f" style="color: aliceblue"></i></a>
+                  <a class="btn btn-square" href=""><i class="bi bi-linkedin" style="color: aliceblue"></i></a>
+                  <a class="btn btn-square" href=""><i class="fab fa-instagram" style="color: aliceblue"></i></a>
+                </div>
+              </div>
+              <div class="text-center border border-5 border-light border-top-0 p-4">
+                <h5 class="mb-0">Cristian Huerfano</h5>
+                <small>Desarrollador Full Stack</small>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Quote End -->
-
-      <!-- Team Start -->
-      <div class="container-xxl py-5">
-        <div class="container">
-          <div class="section-title text-center">
-            <h1 class="display-5 mb-5">Miembros Del Grupo</h1>
-          </div>
-          <div class="row g-4">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item">
-                <div class="overflow-hidden position-relative">
-                  <img class="img-fluid" src="img/team-1.jpg" alt="" style="height: 50%;" />
-                  <div class="team-social">
-                    <a class="btn btn-square" href=""
-                      ><i class="fab fa-facebook-f" style="color: aliceblue"></i
-                    ></a>
-                    <a class="btn btn-square" href=""
-                      ><i class="bi bi-linkedin" style="color: aliceblue"></i
-                    ></a>
-                    <a class="btn btn-square" href=""
-                      ><i class="fab fa-instagram" style="color: aliceblue"></i
-                    ></a>
-                  </div>
-                </div>
-                <div
-                  class="text-center border border-5 border-light border-top-0 p-4"
-                >
-                  <h5 class="mb-0">Brayan Caceres</h5>
-                  <small> desarrollador full stack </small>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="team-item">
-                <div class="overflow-hidden position-relative">
-                  <img class="img-fluid" src="img/team-2.jpg" alt="" />
-                  <div class="team-social">
-                    <a class="btn btn-square" href=""
-                      ><i class="fab fa-facebook-f" style="color: aliceblue"></i
-                    ></a>
-                    <a class="btn btn-square" href=""
-                      ><i class="bi bi-linkedin" style="color: aliceblue"></i
-                    ></a>
-                    <a class="btn btn-square" href=""
-                      ><i class="fab fa-instagram" style="color: aliceblue"></i
-                    ></a>
-                  </div>
-                </div>
-                <div
-                  class="text-center border border-5 border-light border-top-0 p-4"
-                >
-                  <h5 class="mb-0">Sebastian Sanchez</h5>
-                  <small>desarrollador full stack</small>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-              <div class="team-item">
-                <div class="overflow-hidden position-relative">
-                  <img class="img-fluid" src="img/team-3.jpg" alt="" />
-                  <div class="team-social">
-                    <a class="btn btn-square" href=""
-                      ><i class="fab fa-facebook-f" style="color: aliceblue"></i
-                    ></a>
-                    <a class="btn btn-square" href=""
-                      ><i class="bi bi-linkedin" style="color: aliceblue"></i
-                    ></a>
-                    <a class="btn btn-square" href=""
-                      ><i class="fab fa-instagram" style="color: aliceblue"></i
-                    ></a>
-                  </div>
-                </div>
-                <div
-                  class="text-center border border-5 border-light border-top-0 p-4"
-                >
-                  <h5 class="mb-0">Full Name</h5>
-                  <small>desarrollador full stack</small>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-              <div class="team-item">
-                <div class="overflow-hidden position-relative">
-                  <img class="img-fluid" src="img/team-4.jpg" alt="" />
-                  <div class="team-social">
-                    <a class="btn btn-square" href=""
-                      ><i class="fab fa-facebook-f" style="color: aliceblue"></i
-                    ></a>
-                    <a class="btn btn-square" href=""
-                      ><i class="bi bi-linkedin" style="color: aliceblue"></i
-                    ></a>
-                    <a class="btn btn-square" href=""
-                      ><i class="fab fa-instagram" style="color: aliceblue"></i
-                    ></a>
-                  </div>
-                </div>
-                <div
-                  class="text-center border border-5 border-light border-top-0 p-4"
-                >
-                  <h5 class="mb-0">Full Name</h5>
-                  <small>desarrollador full stack</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>   
     </div>
-<!-- Team End -->
-    <!-- Testimonial Start -->
+  </div>
+  <!-- Team End -->
+  <!-- Testimonial Start -->
 
-    <!--  
+  <!--  
         <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="section-title text-center">
@@ -888,89 +706,73 @@
         </div>
     </div>
     -->
-    <!-- Testimonial End -->
+  <!-- Testimonial End -->
 
-    <!-- Footer Start -->
-    <div
-      class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
+  <!-- Inicio Footer -->
+  <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
     <br><br><br><br><br><br>
-      <div class="container py-5 colorF ">
-        <div class="row g-5 query-responsive">
-          <div class="col-lg-8 col-md-6 col-sm-8 contenido-left" >
-            <h4 class="text-dark mb-4">Address</h4>
-            <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>sena - paloquemao
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>+57 3213577184
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>correo@prueba.com
-            </p>
-            <div class="d-flex pt-2">
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="bi bi-linkedin"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-4 col-sm-4 colorF ">
-            <h4 class="text-dark mb-4">Quick Links</h4>
-            <a class="btn btn-link text-dark " href="about.html">Nosotros</a>
-            <a class="btn btn-link text-dark " href="adoption.html">Adopcion</a>
-            <a class="btn btn-link text-dark " href="contact.html">Contactanos</a>
-          </div>
-          
-            </div>
+    <div class="container py-5 colorF ">
+      <div class="row g-5 query-responsive">
+        <div class="col-lg-8 col-md-6 col-sm-8 contenido-left">
+          <h4 class="text-dark mb-4">Address</h4>
+          <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i>Sena Complejo de Paloquemao
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-phone-alt me-3"></i>+57 3213577184
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-envelope me-3"></i>correo@prueba.com
+          </p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-outline-light btn-social" href=""><i class="bi bi-linkedin"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a class="border-bottom" href="#">Your Site Name</a>, All
-              Right Reserved.
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-              Designed By 
-            </div>
-          </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 colorF ">
+          <h4 class="text-dark mb-4">Quick Links</h4>
+          <a class="btn btn-link text-dark " href="nosotros.html">Nosotros</a>
+          <a class="btn btn-link text-dark " href="adoption.html">Adopcion</a>
+          <a class="btn btn-link text-dark " href="contact.html">Contáctanos</a>
         </div>
       </div>
     </div>
-    <!-- Footer End -->
+  </div>
+  </div>
+  <div class="container">
+    <div class="copyright">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          &copy; <a class="border-bottom" href="#">AdopPet</a>, Todos Los Derechos Reservados.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          Designed By
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Fin Footer -->
 
-    <!-- Back to Top -->
-    <a
-      href="#"
-      class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>
