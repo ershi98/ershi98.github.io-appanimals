@@ -100,10 +100,10 @@
                 <div class="row g-0 mx-lg-0">
                     <div class="col-lg-6 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
                         <div class="p-lg-5 ps-lg-0">
-    
+
                             <h1 class="display-5 mb-4">Contáctanos</h1>
-    
-                            <form method="post" action="enviar.php">
+
+                            <form>
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
@@ -116,6 +116,9 @@
                                         <div class="form-floating">
                                             <input type="email" class="form-control" id="email" name="email"
                                                 placeholder="Your Email" required>
+                                            <div class="alert alert-secondary alerta_correo" role="alert">
+                                                Ingresa un correo válido
+                                            </div>
                                             <label for="email">Email</label>
                                         </div>
                                     </div>
@@ -128,14 +131,23 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a message here" id="mensaje"
-                                                name="mensaje" required style="height: 100px"></textarea>
+                                            <textarea class="form-control" placeholder="Leave a message here"
+                                                id="mensaje" name="mensaje" required style="height: 100px"></textarea>
+                                            <div class="alert alert-secondary alerta_mensaje" role="alert">
+                                                El mensaje es muy corto
+                                            </div>
+                                            <div class="alert alert-success alerta_correcto" role="alert">
+                                                El correo ha sido enviado con éxito
+                                            </div>
+                                            <div class="alert alert-danger alerta_incorrecto" role="alert">
+                                                No se envió el correo, intenta más tarde
+                                            </div>
                                             <label for="message">Mensaje</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit"
-                                            value="Enviar Mensaje" >Enviar Mensaje</button>
+                                        <button class="btn btn-primary w-100 py-3" role="button" aria-pressed="true" value="Enviar Mensaje"
+                                            onclick="enviarCorreo();">Enviar Mensaje</button>
                                     </div>
                                 </div>
                             </form>
@@ -144,15 +156,15 @@
                     <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
                         <div class="position-relative h-100">
                             <iframe class="position-absolute w-100 h-100" style="object-fit: cover;"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.873428833779!2d-74.09204989999999!3d4.6166586999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f996f79f4e283%3A0x5856b6b66ab6bd34!2sCENIGRAF!5e0!3m2!1sen!2sco!4v1676238453737!5m2!1sen!2sco"
-                                frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            src="https://www.google.com/maps/d/u/0/embed?mid=19ON2ik2Cc50OVl4wjPZJAkpAAQMhcx8&ehbc=2E312F" 
+                            frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <!-- Contact End -->
 
 
@@ -204,7 +216,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="#">AdopPet</a>, All Right Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
@@ -231,7 +243,8 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script type="text/JavaScript" src="js/main.js"></script>
+
 </body>
 
 </html>
