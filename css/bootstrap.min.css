@@ -2554,14 +2554,14 @@ fieldset:disabled .btn {
 }
 .btn-primary:hover {
   color: #000;
-  background-color: #c29aff;
-  border-color: #c29aff;
+  background-color: #A6E5FF;
+  border-color: #8C9BE8;
 }
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
   color: #000;
-  background-color: #fff;
-  border-color: #fff;
+  background-color: #A6E5FF;
+  border-color: #8C9BE8;
   box-shadow: 0 0 0 0.25rem rgba(145, 99, 56, 0.5);
 }
 .btn-check:checked + .btn-primary,
