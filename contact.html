@@ -35,14 +35,28 @@
 </head>
 
 <body>
-  <!-- Spinner Start -->
-  <div id="spinner"
-    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-    <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-      <span class="sr-only">Loading...</span>
+  <!-- Inicio Loader -->
+  <div class="pre-loader" id="onload">
+    <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+      <div class="wheel"></div>
+      <div class="hamster">
+        <div class="hamster__body">
+          <div class="hamster__head">
+            <div class="hamster__ear"></div>
+            <div class="hamster__eye"></div>
+            <div class="hamster__nose"></div>
+          </div>
+          <div class="hamster__limb hamster__limb--fr"></div>
+          <div class="hamster__limb hamster__limb--fl"></div>
+          <div class="hamster__limb hamster__limb--br"></div>
+          <div class="hamster__limb hamster__limb--bl"></div>
+          <div class="hamster__tail"></div>
+        </div>
+      </div>
+      <div class="spoke"></div>
     </div>
   </div>
-  <!-- Spinner End -->
+  <!-- Fin Loader -->
 
   <!-- Inicio Navbar -->
   <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
@@ -221,6 +235,7 @@
 
   <!-- Template Javascript -->
   <script type="text/JavaScript" src="js/main.js"></script>
+  <script src="js/preloader.js"></script>
 
 </body>
 
