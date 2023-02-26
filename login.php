@@ -93,7 +93,7 @@ $auth_url = $google_client->createAuthUrl();
     <div class="container" id="container">
         <div class="form-container sign-up-container">
             <form action="#">
-                <h1>Create Account</h1>
+                <h1>Crear Cuenta</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                     <a href="<?php echo$google_client->createAuthUrl()?>" class="social"><i class="fab fa-google-plus-g"></i></a>
