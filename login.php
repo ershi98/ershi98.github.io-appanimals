@@ -1,7 +1,8 @@
 <?php
 
-//Include Configuration File
+//incluimos la configuracion del login
 require_once ('php/config-login-google.php');
+//
 
 ?>
 
