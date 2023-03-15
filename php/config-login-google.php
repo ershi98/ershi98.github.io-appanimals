@@ -1,6 +1,5 @@
 
 <?php
-
 //login.php
 
 //Include Configuration File
